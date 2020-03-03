@@ -1,3 +1,7 @@
+<p>
+<img src="https://i.imgur.com/6TlB5YC.png">
+</p>
+
 # Price Estimation of a Zillow House
 
 **Disclaimer: 
