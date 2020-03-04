@@ -30,7 +30,8 @@ names(comps)
 head(comps)
 
 # ELIMINATING ATTRIBUTES
-comps <- subset(comps, select=c("amount", "taxAssessment", "yearBuilt", "lotSizeSqFt",  "finishedSqFt", "bathrooms", "bedrooms", "lastSoldPrice", "score"))
+comps <- subset(comps, select=c("amount", "taxAssessment", "yearBuilt", "lotSizeSqFt",  "finishedSqFt", "bathrooms", "bedrooms", 
+                                "lastSoldPrice", "score"))
 head(comps)
 summary(comps)
 
@@ -93,7 +94,8 @@ predict(g_fit, x0, interval="confidence", level = 0.90)
 # d) Full model 90% prediction interval
 mean(comps_original[,11],na.rm = TRUE) # yearBuilt
 mean(comps_original[,13],na.rm = TRUE) # finishedSqFt
-x1 <- data.frame(amount = 357795, taxAssessment = 207073, yearBuilt = 1937, lotSizeSqFt = 2426, bathrooms = 2.0, bedrooms = 4, score = 14, finishedSqFt = 3006.56)
+x1 <- data.frame(amount = 357795, taxAssessment = 207073, yearBuilt = 1937, lotSizeSqFt = 2426, bathrooms = 2.0, bedrooms = 4, 
+                 score = 14, finishedSqFt = 3006.56)
 predict(g, x1, interval="prediction", level = 0.90)
 
 # e) Full model 90% confidence interval
