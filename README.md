@@ -27,7 +27,7 @@ The response included:
 - data on comparable sold homes which is what I used to build a linear regression model. 
 - the Zillow estimate, high :arrow_up: and low :arrow_down: values of the property of my choice. I used these estimates to compare my own predictions with. 
 
-:bulb: The selling price of the house, stored in`lastSoldPrice`,  is going to be empty for the chosen house, but fear not, since this is the value I am going to be predicting!
+:bulb: The selling price of the house, stored in`lastSoldPrice`,  is going to be empty for the chosen house, but this is desired since it's the value I am going to be predicting!
 
 ### Data Preprocessing
 ### 1. Dimensionality Reduction
